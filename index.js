@@ -28,4 +28,5 @@ module.exports = {
       },
     ],
   },
+  ignorePatterns: ["node_modules/**", "*.json", "coverage", "dist"],
 };
