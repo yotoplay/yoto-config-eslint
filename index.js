@@ -25,6 +25,7 @@ module.exports = {
       "error",
       {
         case: "camelCase",
+        ignore: ["jest-mongodb-config.js"],
       },
     ],
   },
