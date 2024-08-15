@@ -1,5 +1,6 @@
 {
   "name": "@yoto/eslint-config",
+  "type": "module",
   "version": "3.0.0",
   "description": "",
   "main": "index.js",
