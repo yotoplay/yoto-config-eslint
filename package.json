@@ -1,7 +1,7 @@
 {
   "name": "@yoto/eslint-config",
   "type": "module",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "",
   "main": "index.js",
   "keywords": [],
@@ -10,7 +10,8 @@
   "scripts": {
     "deploy:patch": "npm version patch && git push --tags",
     "deploy:minor": "npm version minor && git push --tags",
-    "deploy:major": "npm version major && git push --tags"
+    "deploy:major": "npm version major && git push --tags",
+    "deploy": "standard-version"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "*",
@@ -19,6 +20,7 @@
     "eslint-plugin-unicorn": "*"
   },
   "devDependencies": {
-    "semver": "^7.6.3"
+    "semver": "^7.6.3",
+    "standard-version": "^9.5.0"
   }
 }
