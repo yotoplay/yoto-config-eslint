@@ -4,9 +4,9 @@ This project is a shared copy of our eslint configuration, to provide _some_ con
 
 ## Making Changes
 
-The repository is auto-versioned during CI using `standard-version`. All commits much conform to the [conventional-changelog](https://github.com/conventional-changelog/commitlint) rules.
+The repository is auto-versioned during CI using `standard-version`. All commits must conform to the [conventional-changelog](https://github.com/conventional-changelog/commitlint) rules.
 
-Simply create a commit and push. All versioning is done by CI. Example:
+Create a commit and push. All versioning is done during CI. Example:
 
 ```shell
 git add -A
