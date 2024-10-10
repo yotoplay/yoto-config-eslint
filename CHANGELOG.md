@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.19](http://bitbucket.org/yotoplay/yoto-config-eslint/compare/v3.0.18...v3.0.19) (2024-10-10)
+
 ### [3.0.18](http://bitbucket.org/yotoplay/yoto-config-eslint/compare/v3.0.17...v3.0.18) (2024-10-10)
 
 ### [3.0.17](http://bitbucket.org/yotoplay/yoto-config-eslint/compare/v3.0.16...v3.0.17) (2024-10-10)
