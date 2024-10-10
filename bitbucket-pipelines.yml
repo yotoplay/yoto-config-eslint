@@ -7,5 +7,4 @@ pipelines:
         script:
           - npm ci --prefer-offline --no-audit
           - npm run publish
-          - npm run skip-ci
           - git push origin main --follow-tags --no-verify
