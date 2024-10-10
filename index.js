@@ -5,7 +5,13 @@ import unicorn from "eslint-plugin-unicorn";
 
 export default [
   {
-    ignores: ["node_modules/*", "*.json", "coverage/*", "dist/*"],
+    ignores: [
+      "node_modules/*",
+      "*.json",
+      "coverage/*",
+      "dist/*",
+      ".serverless/*",
+    ],
   },
   {
     files: ["**/*.ts", "**/*.tsx"],
