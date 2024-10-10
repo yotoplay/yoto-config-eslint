@@ -1,14 +1,14 @@
 {
   "name": "@yoto/eslint-config",
   "type": "module",
-  "version": "3.0.12",
+  "version": "3.0.10",
   "description": "",
   "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "scripts": {
-    "publish": "standard-version"
+    "publish": "standard-version --skip.changelog"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "*",
