@@ -11,6 +11,7 @@ export default [
       "coverage/*",
       "dist/*",
       ".serverless/*",
+      "playwright-report/",
     ],
   },
   {
