@@ -38,8 +38,6 @@ export default [
         },
       ],
       "no-console": "error",
-      "space-infix-ops": "error",
-      eqeqeq: ["error", "always"],
       "prefer-template": "error",
     },
   },
