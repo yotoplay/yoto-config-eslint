@@ -28,7 +28,6 @@ export default [
       unicorn,
     },
     rules: {
-      "@typescript-eslint/no-explicit-any": "off",
       "unicorn/prefer-module": "off",
       "unicorn/filename-case": [
         "error",
