@@ -2,6 +2,7 @@ import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import typescriptParser from "@typescript-eslint/parser";
 import prettier from "eslint-config-prettier";
 import unicorn from "eslint-plugin-unicorn";
+import unusedImports from 'eslint-plugin-unused-imports';
 
 export default [
   {
@@ -26,6 +27,7 @@ export default [
     plugins: {
       "@typescript-eslint": typescriptEslint,
       unicorn,
+      'unused-imports': unusedImports
     },
     rules: {
       "unicorn/prefer-module": "off",
@@ -38,6 +40,7 @@ export default [
       ],
       "no-console": "error",
       "prefer-template": "error",
+      'unused-imports/no-unused-imports': 'error'
     },
   },
   {
