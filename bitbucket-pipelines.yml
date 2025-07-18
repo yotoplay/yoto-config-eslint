@@ -1,10 +1,10 @@
-image: node:20
+image: node:22
 
 pipelines:
   default:
     - step:
-        name: Publish
+        name: Release
         script:
           - npm ci --prefer-offline --no-audit
-          - npm run publish
+          - npm run release
           - git push origin main --follow-tags
