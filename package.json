@@ -8,14 +8,16 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "validate": "eslint --config index.js --print-config /dev/null"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "*",
-    "@typescript-eslint/parser": "*",
-    "eslint-config-prettier": "*",
-    "eslint-plugin-unicorn": "*",
-    "eslint-plugin-unused-imports": "*"
+    "@typescript-eslint/eslint-plugin": "^8.40.0",
+    "@typescript-eslint/parser": "^8.40.0",
+    "eslint": "^9.33.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-unicorn": "^60.0.0",
+    "eslint-plugin-unused-imports": "^4.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
