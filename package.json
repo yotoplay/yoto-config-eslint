@@ -22,6 +22,7 @@
     "@commitlint/config-conventional": "^19.8.1",
     "@semantic-release/commit-analyzer": "^13.0.1",
     "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^12.0.2",
     "husky": "^9.1.7",
     "semantic-release": "^24.2.7"
   },
@@ -32,9 +33,18 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ],
+      [
         "@semantic-release/git",
         {
-          "message": "chore(release): ${nextRelease.version} [skip ci]"
+          "message": "chore(release): ${nextRelease.version} [skip ci]",
+          "assets": [
+            "package.json"
+          ]
         }
       ]
     ]
