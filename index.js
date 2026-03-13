@@ -21,7 +21,7 @@ export default [
     languageOptions: {
       parser: typescriptParser,
       parserOptions: {
-        ecmaVersion: 2023,
+        ecmaVersion: 2024,
         sourceType: "module",
       },
     },
