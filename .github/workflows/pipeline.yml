@@ -12,7 +12,6 @@ on:
 
 env:
   NODE_VERSION: 24
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
   test:
@@ -45,7 +44,9 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
+          registry-url: https://registry.npmjs.org
       - run: pnpm install --frozen-lockfile
       - run: pnpm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_CONFIG_PROVENANCE: true
