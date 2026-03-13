@@ -20,6 +20,10 @@
   ],
   "author": "Yoto",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yotoplay/yoto-config-eslint"
+  },
   "packageManager": "pnpm@10.30.2",
   "scripts": {
     "release": "semantic-release",
