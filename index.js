@@ -1,10 +1,10 @@
-import typescriptEslint from "@typescript-eslint/eslint-plugin";
-import typescriptParser from "@typescript-eslint/parser";
+import { defineConfig } from "eslint/config";
+import tseslint from "typescript-eslint";
 import prettier from "eslint-config-prettier";
 import unicorn from "eslint-plugin-unicorn";
 import unusedImports from "eslint-plugin-unused-imports";
 
-export default [
+export default defineConfig([
   {
     ignores: [
       "node_modules/*",
@@ -18,15 +18,8 @@ export default [
   },
   {
     files: ["**/*.ts", "**/*.tsx"],
-    languageOptions: {
-      parser: typescriptParser,
-      parserOptions: {
-        ecmaVersion: 2024,
-        sourceType: "module",
-      },
-    },
+    extends: [tseslint.configs.recommended],
     plugins: {
-      "@typescript-eslint": typescriptEslint,
       unicorn,
       "unused-imports": unusedImports,
     },
@@ -47,4 +40,4 @@ export default [
   {
     ...prettier,
   },
-];
+]);
