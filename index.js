@@ -3,6 +3,7 @@ import tseslint from "typescript-eslint";
 import prettier from "eslint-config-prettier";
 import unicorn from "eslint-plugin-unicorn";
 import unusedImports from "eslint-plugin-unused-imports";
+import vitest from "@vitest/eslint-plugin";
 
 export default defineConfig([
   {
@@ -39,5 +40,14 @@ export default defineConfig([
   },
   {
     ...prettier,
+  },
+  {
+    files: ["**/*.test.ts", "**/*.test.tsx", "**/*.spec.ts", "**/*.spec.tsx"],
+    plugins: {
+      vitest,
+    },
+    rules: {
+      ...vitest.configs.recommended.rules,
+    },
   },
 ]);

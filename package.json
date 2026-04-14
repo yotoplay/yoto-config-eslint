@@ -30,6 +30,7 @@
     "validate": "eslint --config index.js --print-config /dev/null"
   },
   "dependencies": {
+    "@vitest/eslint-plugin": "^1.6.15",
     "eslint": "^10.2.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-unicorn": "^64.0.0",
