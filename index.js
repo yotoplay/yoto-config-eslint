@@ -4,6 +4,7 @@ import prettier from "eslint-config-prettier";
 import unicorn from "eslint-plugin-unicorn";
 import unusedImports from "eslint-plugin-unused-imports";
 import vitest from "@vitest/eslint-plugin";
+import { preferMockWithImport } from "./rules/preferMockWithImport.js";
 
 export default defineConfig([
   {
@@ -45,9 +46,15 @@ export default defineConfig([
     files: ["**/*.test.ts", "**/*.test.tsx", "**/*.spec.ts", "**/*.spec.tsx"],
     plugins: {
       vitest,
+      yoto: {
+        rules: {
+          "prefer-mock-with-import": preferMockWithImport,
+        },
+      },
     },
     rules: {
       ...vitest.configs.recommended.rules,
+      "yoto/prefer-mock-with-import": "error",
     },
   },
 ]);
